@@ -40,49 +40,46 @@
   cursor: pointer;
 }
 
-.description-elipsis{
+.description-elipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 input::-webkit-inner-spin-button,
-input::-webkit-inner-spin-button 
-input::-webkit-outer-spin-button,
-input::-webkit-outer-spin-button
- { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input::-webkit-inner-spin-button input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.add-buttons{
+.add-buttons {
   border: 2px solid #000;
   padding: 5px 50px;
   text-align: center;
   color: #ffffff;
   box-shadow: 3px 3px #000;
   font-weight: 500;
-  font-size: 12px
+  font-size: 12px;
 }
 
-.add-spending-color{
+.add-spending-color {
   background-color: #ff0000;
 }
 
-.add-income-color{
+.add-income-color {
   background-color: #008000;
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .add-buttons{
+  .add-buttons {
     border: 2px solid #000;
     padding: 5px 25px;
     text-align: center;
     color: #ffffff;
     box-shadow: 3px 3px #000;
     font-weight: 500;
-    font-size: 12px
+    font-size: 12px;
   }
 }
-

@@ -8,7 +8,7 @@ import ExpenseList from "./ExpenseList";
 
 // Utils
 import { retrieveData, setDataToLocal } from "../../utils/storageUtil";
-import { initialData } from "../../utils/staticData"
+import { initialData } from "../../utils/staticData";
 
 // Css files
 import "../../assets/css/homepage.css";
@@ -24,8 +24,8 @@ const HomePage = () => {
     let totalIncome = 0;
     let totalSpendings = 0;
     let transactionList = JSON.parse(retrieveData("data")) || [];
-    if(transactionList.length == 0) {
-      transactionList = initialData
+    if (transactionList.length === 0) {
+      transactionList = initialData;
     }
     setData(transactionList);
     if (transactionList.length) {
@@ -58,7 +58,7 @@ const HomePage = () => {
     const existingData = [...data];
     existingData.push(formData);
     existingData.sort(function(a, b) {
-      return new Date(a.transactionDate) - new Date(b.transactionDate);
+      return new Date(b.transactionDate) - new Date(a.transactionDate);
     });
     setData(existingData);
     setDataToLocal("data", JSON.stringify(existingData));
@@ -122,7 +122,7 @@ const HomePage = () => {
         </Col>
         <Col xs="6" sm="6" md={{ size: 4 }}>
           <button
-          className="add-buttons add-spending-color"
+            className="add-buttons add-spending-color"
             onClick={() => onOpenModal("debit")}
           >
             Add Spending

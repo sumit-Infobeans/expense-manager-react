@@ -56,12 +56,18 @@ const ExpenseList = props => {
                 xs="4"
                 className="text-center d-flex align-items-end justify-content-center"
               >
-               <span className="description-elipsis" id={`UncontrolledTooltip-${index}`}>
-                {item.description}
-              </span>
-              <UncontrolledTooltip placement="top" target={`UncontrolledTooltip-${index}`}>
-               {item.description}
-              </UncontrolledTooltip>
+                <span
+                  className="description-elipsis"
+                  id={`UncontrolledTooltip-${index}`}
+                >
+                  {item.description}
+                </span>
+                <UncontrolledTooltip
+                  placement="top"
+                  target={`UncontrolledTooltip-${index}`}
+                >
+                  {item.description}
+                </UncontrolledTooltip>
               </Col>
               <Col
                 xs="4"
